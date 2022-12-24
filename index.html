@@ -201,7 +201,8 @@
 
   <!-- Experience -->
   <section id="experience" class="section">
-    <h1 style="padding-bottom: 30px;">Experience</h1>
+    <div class="section__container">
+      <h1 style="padding-bottom: 30px;">Experience</h1>
     <div class="workexperience">
       <div class="experience">
         <img src="imgs/netgear.jpeg" alt="People" class="experience__img">
@@ -229,113 +230,105 @@
         <img src="imgs/ubc_ctlt.jpeg" alt="People" class="experience__img">
       </div>
     </div>
+    </div>
   </section>
 
 
   <!-- Projects -->
   <section id="work" class="section">
     <div class="section__container">
-     <h1>My Works</h1>
-     <h3>Projects</h3>
-     <div class="work__categories">
-       <button class="category__btn selected" data-filter="*">
-         All <span class="category__count">8</span>
-       </button>
-       <button class="category__btn" data-filter="front-end">
-         Front-end <span class="category__count">3</span>
-       </button>
-       <button class="category__btn" data-filter="back-end">
-         Python <span class="category__count">3</span>
-       </button>
-       <button class="category__btn" data-filter="mobile">
-         Database <span class="category__count">2</span>
-       </button>
-     </div>
-     <div class="work__projects">
-       <a href="" class="project" target="blank" data-type="front-end">
-         <img
-           src="imgs/projects/mercante.jpg"
-           alt="Youtube"
-           class="project__img"
-         />
-         <div class="project__description">
-           <h3>Youtube Site</h3>
-           <span>Clone coding with HTML, CSS</span>
-         </div>
-       </a>
-       <a
-         href="https://github.com/dream-ellie/responsive-nav-bar"
-         class="project"
-         data-type="front-end"
-         target="blank"
-       >
-         <img
-           class="project__img"
-           src="imgs/projects/covid-seoul.png"
-           alt="navbar"
-         />
-         <div class="project__description">
-           <h3>Responsive Navbar</h3>
-           <span>HTML, CSS with media query</span>
-         </div>
-       </a>
-       <a
-         href="https://github.com/dream-ellie/responsive-nav-bar"
-         class="project"
-         data-type="front-end"
-         target="blank"
-       >
-         <img class="project__img" src="imgs/projects/transfermarkt_logo.jpg" alt="navbar" />
-         <div class="project__description">
-           <h3>Shopping mall game</h3>
-           <span>HTML, CSS, JavaScript, Json</span>
-         </div>
-       </a>
-       <a href="" class="project" data-type="back-end">
-         <img class="project__img" src="imgs/projects/baseball.jpg" alt="" />
-         <div class="project__description">
-           <h3>Project</h3>
-           <span>Explanation</span>
-         </div>
-       </a>
-       <a href="" class="project" data-type="back-end">
-         <img class="project__img" src="imgs/projects/text.jpg" alt="" />
-         <div class="project__description">
-           <h3>Project</h3>
-           <span>Explanation</span>
-         </div>
-       </a>
-       <a href="" class="project" data-type="mobile">
-         <img class="project__img" src="imgs/projects/portfolio.png" alt="" />
-         <div class="project__description">
-           <h3>Project</h3>
-           <span>Explanation</span>
-         </div>
-       </a>
-       <a href="" class="project" data-type="mobile">
-         <img class="project__img" src="imgs/projects/community_db.jpeg" alt="" />
-         <div class="project__description">
-           <h3>Project</h3>
-           <span>Explanation</span>
-         </div>
-       </a>
-       <a href="" class="project" data-type="mobile">
-         <img class="project__img" src="imgs/projects/comming soon.jpg" alt="" />
-         <div class="project__description">
-           <h3>Project</h3>
-           <span>Explanation</span>
-         </div>
-       </a>
-     </div>
+      <h1>My Works</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="back-end">
+          Python <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="mobile">
+          Database <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type="front-end">
+          <img src="imgs/projects/mercante.jpg" alt="Youtube" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML, CSS</span>
+          </div>
+        </a>
+        <a href="https://github.com/dream-ellie/responsive-nav-bar" class="project" data-type="front-end" target="blank">
+          <img class="project__img" src="imgs/projects/covid-seoul.png" alt="navbar" />
+          <div class="project__description">
+            <h3>Responsive Navbar</h3>
+            <span>HTML, CSS with media query</span>
+          </div>
+        </a>
+        <a href="https://github.com/dream-ellie/responsive-nav-bar" class="project" data-type="front-end" target="blank">
+          <img class="project__img" src="imgs/projects/transfermarkt_logo.jpg" alt="navbar" />
+          <div class="project__description">
+            <h3>Shopping mall game</h3>
+            <span>HTML, CSS, JavaScript, Json</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/baseball.jpg" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/text.jpg" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/portfolio.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/community_db.jpeg" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/comming soon.jpg" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+      </div>
     </div>
-   </section>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="section">
     <h1 class="contact__title">Let's talk</h1>
     <h2 class="contact__email">byungsun1819@gmail.com</h2>
-    <div class="contact__liks"></div>
-    <div class="contact__statement">This webpage is developed by vanilla JavaScript, CSS, and HTML.</div>
+    <div class="contact__links">
+      <a href="https://github.com/dream-ellie" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    <p class="contact__rights">
+      This webpage is developed in vanilla JavaScript, CSS, and HTML.
+    </p>
   </section>
 </body>
 </html>
