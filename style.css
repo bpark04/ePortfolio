@@ -359,7 +359,6 @@ p {
 }
 
 /* Work */
-
 .work__categories {
   margin: 40px;
 }
@@ -412,7 +411,7 @@ p {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  background-color: var(--color-white);
 }
 
 .project__img {
