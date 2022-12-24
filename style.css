@@ -5,14 +5,16 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-ubc-navy: #004089;
+  --color-navy: #274472;
+  --color-dark-navy: #5d87a1;
   --color-black: #4d4d4d;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
+  --color-light-skyblue: #d7e9f1;
   --color-orange: #feb546;
   --color-black: #000000;
 
@@ -36,6 +38,31 @@
 /* Universal tags */
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -67,3 +94,224 @@ p {
   margin: 4px 0;
 }
 
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--color-navy);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: white;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid white;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-navy);
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
+/* Home */
+#home {
+  background: url('imgs/background.jpeg') center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__pics {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__stack {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.stack__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.stack__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.stack__icon:hover {
+  color: var(--color-navy);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.stack__title,
+.stack__description {
+  color: var(--color-dark-grey);
+}
+
+.stack__description {
+  font-size: var(--font-small);
+}
+
+.study {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.study__description {
+  margin: 0 16px 10px 20px; 
+  text-align: left;
+}
+
+.ubc__logo {
+  width: 70px;
+  height: 70px;
+  margin: 0px 5px;
+}
+
+.bugil__logo {
+  width: 80px;
+  height: 80px;
+}
+
+
+.study__school,
+.study__period {
+  color: var(--color-light-grey);
+}
+
+.study__school {
+  font-size: var(--font-small);
+}
+
+.study__period {
+  font-size: var(--font-micro);
+}
+
+/* Skill */
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset_title {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__percentage {
+  height: 3px;
+  background-image: linear-gradient(to right, royalblue, aquamarine);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tool__element,
+.library__element {
+  margin-bottom: 5px;
+}
+
+
+.library {
+  background-color: var(--color-grey);
+}
+
+.library,
+.tool {
+  padding: 20px;
+}
