@@ -33,9 +33,13 @@ const scrollTo = (e) => {
   if (link === null) {
     return;
   }
+
+  navbarMenu.classList.remove('open');
+
   let scroll = document.querySelector(link);
   scroll.scrollIntoView({ behavior: 'smooth' });
 }; 
+
 
 // Handle scrolling when clicking on navbar element
 let navbarMenu = document.querySelector('.navbar__menu');
@@ -43,6 +47,12 @@ navbarMenu.addEventListener('click', scrollTo);
 
 let contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click', scrollTo);
+
+// Navbar toggle for reduced screen size
+let navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
 
 // Projects
 let workBtnContainer = document.querySelector('.work__categories');
