@@ -71,7 +71,6 @@ workBtnContainer.addEventListener('click', (e) => {
 
   projectContainer.classList.add('animation-out');
   
-
   setTimeout(() => {
     projects.forEach((project) => {
       if (filter === '*' || filter === project.dataset.type) {
@@ -82,5 +81,16 @@ workBtnContainer.addEventListener('click', (e) => {
     });
     projectContainer.classList.remove('animation-out');
   }, 300)
-
 });
+
+// Show arrow up button when scrolling down
+let arrow = document.querySelector('.arrow');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight/2) {
+    arrow.classList.add('visible');
+  } else {
+    arrow.classList.remove('visible');
+  }
+});
+
+arrow.addEventListener('click', scrollTo);
