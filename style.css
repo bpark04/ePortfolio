@@ -351,6 +351,7 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  border-color: black;
 }
 
 .experience__img:nth-child(odd) {
